@@ -2,19 +2,19 @@ import java.util.Scanner;
 
 public class Kalkulator
 {
-    public static int dodaj(int a, int b)
+    public static int add(int a, int b)
     {
         return a + b;
     }
-    public static int odejmij(int a, int b)
+    public static int subtract(int a, int b)
     {
         return a - b;
     }
-    public static int pomnoż(int a, int b)
+    public static int multiply(int a, int b)
     {
         return a * b;
     }
-    public static int podziel(int a, int b)
+    public static int split(int a, int b)
     {
         return a / b;
     }
@@ -26,53 +26,53 @@ public class Kalkulator
 
         while (true)
         {
-            System.out.println("Liczba pierwsza: ");
-            int liczbaPierwsza = scanner.nextInt();
+            System.out.println("Number one:");
+            int numberFirst = scanner.nextInt();
 
-            System.out.println("Wybierz operację");
+            System.out.println("Select an operation");
             System.out.println(" ");
-            System.out.println("1. Dodawanie");
-            System.out.println("2. Odejmowanie");
-            System.out.println("3. Mnożenie");
-            System.out.println("4. Dzielenie");
-            System.out.println("5. Wyjście");
-            System.out.println("6. Wynik ");
+            System.out.println("1. adding");
+            System.out.println("2. subtraction");
+            System.out.println("3. multiplication");
+            System.out.println("4. dividing");
+            System.out.println("5. output");
+            System.out.println("6. result ");
 
-            System.out.print("Twój wybór: ");
-            int wybor = scanner.nextInt();
+            System.out.print("Your choice: ");
+            int selection = scanner.nextInt();
 
-            if (wybor == 5)
+            if (selection == 5)
             {
-                System.out.println("CHUJ CI W DUPĘ I DWA WIADRA");
+                System.out.println("Goodbay");
                 break;
             }
 
 
-            System.out.println("Podaj liczbę drugą: ");
-            int liczbaDruga = scanner.nextInt();
+            System.out.println("Enter number two:");
+            int numberTwo = scanner.nextInt();
 
 
 
 
-           if (wybor == 1)
+           if (selection == 1)
             {
-                System.out.println("Wynik Dodawania to: " + dodaj(liczbaPierwsza, liczbaDruga));
+                System.out.println("The result of the Addition is:" + add(numberFirst, numberTwo));
             }
-            else if (wybor == 2)
+            else if (selection == 2)
             {
-                System.out.println("Wynik Odejmowania to: " + odejmij(liczbaPierwsza,liczbaDruga));
+                System.out.println("The result of Subtraction is:" + subtract(numberFirst,numberTwo));
             }
-            else if (wybor == 3)
+            else if (selection == 3)
             {
-                System.out.println("Wynik Mnożenia to: " + pomnoż(liczbaPierwsza,liczbaDruga));
+                System.out.println("The result of the Multiplication is:" + multiply(numberFirst,numberTwo));
             }
-            else if (wybor == 4)
+            else if (selection == 4)
             {
-                System.out.println("Wynik Dzielenia to: " + podziel(liczbaPierwsza,liczbaDruga));
+                System.out.println("The result of the Divide is: "  + split(numberFirst,numberTwo));
             }
             else
             {
-                System.out.println("Masz podane liczby fiutku ;-)");
+                System.out.println("select other numbers:  ;-)");
                 break;
             }
         }
